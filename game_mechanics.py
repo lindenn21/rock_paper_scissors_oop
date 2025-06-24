@@ -13,11 +13,23 @@ class Gameplay:
             print("SCORES:")
             print(f"|Player 1: {score.player} || Computer: {score.computer}|")
             self.player = input("Pick your move, Player: R - Rock | P - Paper | S - Scissors | Q - Quit ==").capitalize()
+
             if self.player == "Q":
                 print("Game is stopping..")
                 break
+
             if random_num == 0:
                 self.computer = "ROCK"
+            elif random_num == 1:
+                self.computer = "PAPER"
+            else:
+                self.computer = "SCISSORS"
+
+            print(f"Computer Picks: {self.computer}")
+
+
+
+
 
 
 
