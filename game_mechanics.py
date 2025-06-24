@@ -29,7 +29,7 @@ class Gameplay:
             print(f"Computer Picks: {self.computer_move}")
 
             self.play()
-
+        self.results()
     def play(self):
         if self.player_move == self.computer_move:
             print("It's a tie!")
@@ -57,6 +57,11 @@ class Gameplay:
         else:
             print("Invalid move!")
 
+    def results(self):
+        if score.computer < score.player:
+            print(f"Player wins with a score of {score.player}!")
+        else:
+            print(f"Computer wins with a score of {score.computer}!")
 
 
 

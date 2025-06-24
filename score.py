@@ -5,3 +5,4 @@ class Scores:
         self.player = player
         self.computer = computer
 
+
