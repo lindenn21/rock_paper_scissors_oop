@@ -28,9 +28,9 @@ class Gameplay:
 
             print(f"Computer Picks: {self.computer_move}")
 
-            self.play()
+            self.moves()
         self.results()
-    def play(self):
+    def moves(self):
         if self.player_move == self.computer_move:
             print("It's a tie!")
         elif self.player_move == "R":
