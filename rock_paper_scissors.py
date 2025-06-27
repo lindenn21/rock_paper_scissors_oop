@@ -6,11 +6,17 @@ class StartGame(Gameplay):
         print("1. Play the game")
         print("2. Nope! I'm leaving.")
         try:
-            choice = input("Choose: ")
-            if choice == "1":
-                self.mechanics()
-            else:
-                print("Alright! Goodbye.")
+            while True:
+                choice = input("Choose: ")
+                if choice == "1":
+                    self.mechanics()
+                elif choice == "2":
+                    print("Alright! Thanks and goodbye.")
+                    break
+                else:
+                    print("Umm, the choices you're supposed to input are 1 or 2...")
+        except TypeError:
+            print("Try again...")
 
 
 
