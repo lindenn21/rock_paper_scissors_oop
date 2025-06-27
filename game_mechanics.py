@@ -60,8 +60,10 @@ class Gameplay:
     def results(self):
         if score.computer < score.player:
             print(f"Player wins with a score of {score.player}!")
+
         else:
             print(f"Computer wins with a score of {score.computer}!")
+
 
 
 

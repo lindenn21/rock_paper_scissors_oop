@@ -7,9 +7,10 @@ class StartGame(Gameplay):
         print("2. Nope! I'm leaving.")
         try:
             while True:
-                choice = input("Choose: ")
+                choice = input("Choose (1 - Play, 2 - Exit): ")
                 if choice == "1":
                     self.mechanics()
+                    break
                 elif choice == "2":
                     print("Alright! Thanks and goodbye.")
                     break
