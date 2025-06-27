@@ -13,7 +13,9 @@ class Gameplay:
             random_num = randint(0,2)
             print("SCORES:")
             print(f"|Player 1: {score.player} || Computer: {score.computer}|")
-            self.player_move = input("Pick your move, Player: R - Rock | P - Paper | S - Scissors | Q - Quit ==").upper()
+            print("="*80)
+            self.player_move = input("Pick your move, Player: R - Rock | P - Paper | S - Scissors | Q - Quit:").upper()
+            print("="*80)
 
             if self.player_move == "Q":
                 print("Game is stopping..")
